@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TrackToGain: Gym Tracker</title>
+    <meta
+      name="description"
+      content="The gym tracker with no account and no subscription: unlimited plans, one tap for set and rest. Offline, no ads." />
+    <style>
+      :root {
+        --text: #15171c;
+        --muted: #4a4f5a;
+        --bg: #f6f7f9;
+        --surface: #ffffff;
+        --border: #c9ccd3;
+        --accent: #c4441c;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text: #f2f3f5;
+          --muted: #b3b7c0;
+          --bg: #0e0f12;
+          --surface: #1b1d22;
+          --border: #3a3d45;
+          --accent: #ff8a65;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        line-height: 1.6;
+        color: var(--text);
+        background: var(--bg);
+        overflow-wrap: break-word;
+      }
+      main {
+        max-width: 56rem;
+        margin: 0 auto;
+        padding: 1.5rem 1rem 3rem;
+      }
+      a {
+        color: var(--accent);
+      }
+      nav {
+        margin-bottom: 1.5rem;
+      }
+      h1 {
+        font-size: clamp(1.8rem, 6vw, 2.6rem);
+        line-height: 1.15;
+        margin: 0 0 0.5rem;
+      }
+      h2 {
+        margin-top: 2.5rem;
+      }
+      .lead {
+        font-size: 1.2rem;
+        color: var(--muted);
+        max-width: 38rem;
+      }
+      .points {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+        padding: 0;
+        list-style: none;
+      }
+      .points li {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        padding: 1rem;
+      }
+      .points strong {
+        display: block;
+        margin-bottom: 0.25rem;
+      }
+      .shots {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      }
+      .shots img {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        border: 1px solid var(--border);
+      }
+      .stores {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin: 1.5rem 0;
+      }
+      .stores span {
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 0.5rem 1rem;
+        background: var(--surface);
+      }
+      footer {
+        margin-top: 3rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav><a href="#en">English</a> · <a href="#de">Deutsch</a></nav>
+
+      <section id="en" lang="en">
+        <h1>TrackToGain: Gym Tracker</h1>
+        <p class="lead">
+          The gym tracker with no account and no subscription: unlimited plans for free, one tap for
+          set and rest.
+        </p>
+        <div class="stores">
+          <span>App Store: coming soon</span>
+          <span>Google Play: coming soon</span>
+        </div>
+        <ul class="points">
+          <li>
+            <strong>One tap</strong>
+            The big circle counts your set and starts the rest timer. Vibration and sound when rest
+            is over, even with the phone locked.
+          </li>
+          <li>
+            <strong>Unlimited plans</strong>
+            Start from a template, pick from 100 exercises or create your own, with machine numbers
+            and settings like "Seat 4".
+          </li>
+          <li>
+            <strong>Training buddy</strong>
+            A little figure shows every exercise and lifts a trophy when you beat your best.
+          </li>
+          <li>
+            <strong>Private by design</strong>
+            Everything stays on your device. No account, no tracking, no ads, no internet needed.
+          </li>
+        </ul>
+        <div class="shots">
+          <img src="img/en-overview.jpg" alt="Training mode with the big circle" />
+          <img src="img/en-rest.jpg" alt="Rest timer" />
+          <img src="img/en-figure.jpg" alt="Training buddy" />
+          <img src="img/en-progress.jpg" alt="Progress chart" />
+        </div>
+        <h2>Free, with optional Pro</h2>
+        <p>
+          Plans, history, records and backups are free. One optional one-time purchase, TrackToGain
+          Pro, also unlocks the Apple Watch app, estimated 1RM, set history, the heatmap and more
+          looks. No subscription.
+        </p>
+        <h2>Support</h2>
+        <p>
+          Questions or ideas? Write to <a href="mailto:krug_digital@gmx.de">krug_digital@gmx.de</a>.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="de" lang="de">
+        <h1>TrackToGain: Gym Tracker</h1>
+        <p class="lead">
+          Der Gym-Tracker ohne Konto und ohne Abo: unbegrenzte Pläne gratis, ein Tipp für Satz und
+          Pause.
+        </p>
+        <div class="stores">
+          <span>App Store: bald verfügbar</span>
+          <span>Google Play: bald verfügbar</span>
+        </div>
+        <ul class="points">
+          <li>
+            <strong>Ein Tipp</strong>
+            Der große Kreis zählt den Satz und startet den Pausentimer. Vibration und Ton am Ende
+            der Pause, auch bei gesperrtem Handy.
+          </li>
+          <li>
+            <strong>Unbegrenzte Pläne</strong>
+            Starte mit einer Vorlage, wähle aus 100 Übungen oder lege eigene an, mit Gerätenummer
+            und Einstellungen wie „Sitz 4“.
+          </li>
+          <li>
+            <strong>Trainingsfigur</strong>
+            Eine kleine Figur macht jede Übung vor und hält bei einer Bestleistung den Pokal hoch.
+          </li>
+          <li>
+            <strong>Privat aus Prinzip</strong>
+            Alles bleibt auf deinem Gerät. Kein Konto, kein Tracking, keine Werbung, kein Internet
+            nötig.
+          </li>
+        </ul>
+        <div class="shots">
+          <img src="img/de-overview.jpg" alt="Trainingsmodus mit dem großen Kreis" />
+          <img src="img/de-rest.jpg" alt="Pausentimer" />
+          <img src="img/de-figure.jpg" alt="Trainingsfigur" />
+          <img src="img/de-progress.jpg" alt="Fortschrittsdiagramm" />
+        </div>
+        <h2>Kostenlos, mit optionalem Pro</h2>
+        <p>
+          Pläne, Verlauf, Rekorde und Sicherung sind kostenlos. Ein einmaliger, optionaler Kauf,
+          TrackToGain Pro, schaltet zusätzlich die Apple-Watch-App, geschätztes 1RM, Satzverlauf,
+          Heatmap und mehr Looks frei. Kein Abo.
+        </p>
+        <h2>Support</h2>
+        <p>
+          Fragen oder Ideen? Schreib an
+          <a href="mailto:krug_digital@gmx.de">krug_digital@gmx.de</a>.
+        </p>
+      </section>
+
+      <footer>
+        <a href="../">Privacy Policy / Datenschutz</a> · <a href="../#impressum">Impressum</a> ·
+        <a href="../#legal-notice">Legal notice</a><br />
+        TrackToGain gives no medical advice and does not replace advice from a doctor. Made by
+        Krug-Digital.
+      </footer>
+    </main>
+  </body>
+</html>
